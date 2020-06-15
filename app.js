@@ -678,8 +678,14 @@ var r = 20;
 // Solution:
 // var input_char = prompt("Enter the number or character");
 
-// if(input_char >= 0 || input_char == " " ){
-  
+// if(input_char.charCodeAt(0) >= 65 && input_char.charCodeAt(0) <= 90){
+//   alert("Your Character Input is in Input UpperCase Letter");
+// }
+// else if(input_char.charCodeAt(0) >= 97 && input_char.charCodeAt(0) <= 122){
+//   alert("Your Character Input is in LowerCase Letter");
+// }
+// else {
+//   alert("This is a number");
 // }
 
 
@@ -828,35 +834,50 @@ var r = 20;
 
 // Task No. 9
 // a. Solution:
-// var color_name = [];
-// var ask_color = prompt("which color you want to display to beginning of array");
-// color_name.unshift(ask_color)
-// document.write(color_name);
+// var color_names = ["Red","Yellow","Green"];
+// document.write(color_names + "<br>");
+
+// var ask_color = prompt("which color you want to display to the beginning of array");
+// color_names.unshift(ask_color)
+// document.write(color_names+"<br>");
 
 
 // b. Solution:
-// var color_name = [];
-// var ask_color = prompt("which color you want to display at the end of array");
-// color_name.push(ask_color)
-// document.write(color_name);
+// var ask_color = prompt("which color you want to display to the end of array");
+// color_names.push(ask_color)
+// document.write(color_names+"<br>");
 
 
 // c. Solution:
-// var color_name = [];
-// var ask_color = prompt("which color you want to display at the end of array");
-// color_name.unshift(ask_color)
-// document.write(color_name);
+// var ask_color_1 = prompt("Add  color 1 to the begining of the array with comma separated");
+// var ask_color_2 = prompt("Add  color 2 to the begining of the array with comma separated");
+// color_names.unshift(ask_color_1);
+// color_names.unshift(ask_color_2);
+// document.write(color_names+"<br>");
 
 //d.Solution:
-// var color_name = ["red","green","yellow"];
-// color_name.shift();
-// document.write(color_name);
+// color_names.shift();
+// document.write(color_names+"<br>");
 
 
 //e.Solution:
-// var color_name = ["red","green","yellow"];
-// color_name.pop();
-// document.write(color_name);
+// color_names.pop();
+// document.write(color_names+"<br>");
+
+
+//f.Solution:
+// var ask_color_position = +prompt("Please tell which index you want to add a color");
+// var ask_color_4 = prompt("Please tell the color also");
+// color_names = color_names.splice(ask_color_position ,0 , ask_color_4);
+// document.write(color_names);
+
+
+//g.Solution:
+// var ask_color_position_2 = +prompt("Please tell which index you want to delete a color");
+// var ask_color_ratio = +prompt("Please tell the color also");
+// color_names = color_names.splice(ask_color_position_2  ,ask_color_ratio);
+// document.write(color_names);
+
 
 // Task No. 10
 // a. Solution:
@@ -865,6 +886,51 @@ var r = 20;
 // document.write("Ordered Scores of Students: "+score_students.sort());
 
 
+// Task No. 11
+// Solution:
+// var Cities = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+// var selectedCities = [];
+// var new_cities = Cities.slice(2,4);
+// new_cities = selectedCities.push(new_cities);
+// document.write("Cities list: <br>"+Cities + "<br><br>");
+// document.write("Selected cities list: <br>"+selectedCities);
+
+
+// Task No. 12
+// Solution:
+// var arr = ["This","is","my","cat"];
+// document.write("Array: <br>"+arr.join()+"<br><br>");
+// document.write("String: <br>"+arr.join(" "));
+
+
+
+// Task No. 13
+// Solution:
+// var devices = ["keyboard","mouse","printer","monitor"];
+// document.write("Devices: <br>"+devices+"<br><br>");
+// for(i=0;i<=3;i++){
+//   document.write("Out: <br>");
+//   var new_device= devices.shift();
+//   document.write(new_device+"<br>");
+// }
+
+
+// Task No. 14
+// Solution:
+// var devices = ["keyboard","mouse","printer","monitor"];
+// document.write("Devices: <br>"+devices+"<br><br>");
+// for(i=0;i<=3;i++){
+//   document.write("Out: <br>");
+//   var new_device= devices.pop();
+//   document.write(new_device+"<br>");
+// }
+
+
+// Task No. 15
+// Solution:
+// var phones = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"];
+// document.write("<h2>Phone Manufacturers</h2> <br> <select><option>"+phones[0]+"</option><option>"+phones[1]+"</option><option>"+phones[2]+"</option><option>"+phones[3]+"</option><option>"+phones[4]+"</option><option>"+phones[5]+"</option></select>");
+
 
 
 
@@ -872,12 +938,96 @@ var r = 20;
 
 // Chapter No. 17 - 20
 
+// Task No. 1
+// Solution:
+// var mul_arr = [[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+
+
+// Task No. 2
+// Solution:
+// for(i=0;i<mul_arr.length;i++){
+//   document.write(mul_arr[i] + "<br>");
+// }
+
+
 // Task No. 3
 // Solution:
-var a = [1,2,3,4,5,6,7,8,9,10];
-for(i=0;i<a.length;i++){
-  document.write(a[i]+ "<br>");
-}
+// var a = [1,2,3,4,5,6,7,8,9,10];
+// for(i=0;i<a.length;i++){
+//   document.write(a[i]+ "<br>");
+// }
+
+
+
+// Task No. 4
+// Solution:
+// var num_1 = +prompt("Enter a number to show its multiplication table");
+// var num_2 = +prompt("Enter length multiplication table");
+
+// document.write("Multiplication table of  "+num_1+ " Length "+num_2+"<br><br>");
+// for(i=1; i<=num_2;i++){
+//   document.write(num_1+" x "+i+" = "+(num_1*i)+ "<br>");
+// }
+
+
+// Task No. 5
+// Solution:
+// var fruits = ["apple","banana","mango","orange","strawberry"];
+// for(i=0;i<fruits.length;i++){
+//   document.write(fruits[i]+"<br>");
+// }
+// document.write("<br><br>");
+// for(i=0;i<fruits.length;i++){
+//   document.write("Element at index "+i+" is "+fruits[i]+"<br>");
+// }
+
+// Task No. 6
+// Solution:
+// var counting = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+// var reverse_counting = [10,9,8,7,6,5,4,3,2,1];
+// var even = [0,2,4,6,8,10,12,14,16,18,20];
+// var odd = [1,3,5,7,9,11,13,15,17];
+// var series = ["2k","4k","8k","10k","12k","14k","16k","18k","20k"];
+
+// document.write("Counting: <br><br>"+ counting + "<br><br>");
+// document.write("Reverse counting: <br><br>"+ reverse_counting + "<br><br>");
+// document.write(" Even: <br><br>"+ even + "<br><br>");
+// document.write(" Odd: <br><br>"+ odd + "<br><br>");
+// document.write(" Series: <br><br>"+ series + "<br><br>");
+
+
+
+// Task No. 7
+// Solution:
+// var A = ["cake","apple pie","cookie","chips","patties"];
+// var B = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+// for(i=0; i<A.length;i++){
+//   if(A[i]=== B){
+//     document.write(B+" is available at index "+i+" in our bakery");
+//   }
+//   else{
+//     continue;
+//   }
+
+// }
+
+
+
+// Task No. 8
+// Solution:
+// var A = [24,53,78,91,12];
+// var B = Math.max.apply(null,A);
+// document.write("Array items: "+A+"<br>");
+// document.write("The largest number is "+B);
+
+
+// Task No. 9
+// Solution
+// var A = [24,53,78,91,12];
+// var B = Math.min.apply(null,A);
+// document.write("Array items: "+A+"<br>");
+// document.write("The smallest number is "+B);
+
 
 // Task No. 10
 // Solution:
